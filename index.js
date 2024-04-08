@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-app.get("/users", (req, res) => {
+app.post("/users", (req, res) => {
   console.log(req.headers, req.body);
   res.status(200).json({
     message: "OK",
